@@ -132,7 +132,42 @@ body{
         width: 60%;
     }
     .services{
-        
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        line-height: 2;
+    }
+    .services > article{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+    }
+    .services aside{
+        background-color: gainsboro;
+        row-gap: 3vh;
+        display: flex;
+        flex-direction: column;
+        padding: 15%;
+    }
+    .services img{
+        width: 100%;
+        height: 70vh;
+    }
+    blockquote{
+        background-color: lightgray;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        padding: 15%;
+        align-items: center;
+    }
+    blockquote > a{
+        background-color: grey;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5%;
+        width: 50%;
+        text-align: center;
     }
     .gallery{
         background-color: var(--gallery);
@@ -278,3 +313,4 @@ body{
         text-align: center;
     }
 }
+@media(min-width: 00px)
