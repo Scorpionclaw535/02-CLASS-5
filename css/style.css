@@ -254,6 +254,12 @@ body{
         text-align: left;
         color: dimgray;
     }
+    .contact aside a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: dimgray;
+    }
     iframe{
         border: 0px transparent none;
         height: 60vh;
@@ -311,6 +317,121 @@ body{
     }
     footer span{
         text-align: center;
+        color: dimgray;
     }
 }
-@media(min-width: 00px)
+/* tablet version */
+@media(min-width: 600px){
+    main{
+        row-gap: 3vh;
+    }
+    
+    header > article:first-child{
+        padding: 7%;
+    }
+    header ul{
+        padding: 3% ;
+        justify-content: right;
+        gap: 2vh;
+    }
+    header li{
+        width: 10vh;
+        height: 10vh;
+    }
+    header a{
+        transition: 0.4s;
+    }
+    header a:hover{
+        background-color: var(--orchid);
+        color: whitesmoke;
+    }
+    /* .  */
+    .about{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .about img{
+        height: 70vh;
+
+    }
+    .about > article{
+        padding: 10%;
+        row-gap: 2vh;
+    }
+    .about a{
+        width: 20%;
+        padding: 3%;
+    }
+    .about a:hover{
+        background-color: dimgray;
+    }
+    /* .  */
+    .block {
+        padding: 10% 0%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .block > aside{
+        width: 25%;
+    }
+    .block i{
+        font-size: 72px;
+    }
+    /* .  */
+    .services{
+        padding-left: 5%;
+        padding-right: 5%;
+        row-gap: 3vh;
+    }
+    .services  aside{
+        padding: 5%;
+    }
+    blockquote{
+        padding: 10%;
+    }
+    .services a{
+        padding: 1%;
+        width: 20%;
+    }
+    .services a:hover{
+        background-color: var(--orchid);
+    }
+    /* .  */
+    .gallery > article{
+        padding: 5%;
+        row-gap: 1vh;
+    }
+    .gallery h2{
+        width: 100%;
+        text-align: right;
+    }
+    .gallery a:hover{
+        color: whitesmoke;
+    }
+    .gallery > figure{
+        padding: 5% 0%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 2vh;
+    }
+    .gallery img{
+        width: 30%;
+    }
+    /* .  */
+    .contact{
+        padding-bottom:5% ;
+        
+    }
+    .contact > article{
+        padding: 5%;
+    }
+    iframe{
+        height: 35vh;
+    }
+    /* .  */
+    footer i{
+        font-size: 16px;
+        padding: 2%;
+    }
+}
